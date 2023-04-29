@@ -45,11 +45,6 @@ body {
   padding: 0 2rem;
 }
 
-.phone-app-demo {
-  height: 61.8rem;
-  background: url("./images/mobile-app.png") center no-repeat;
-  flex: 1;
-}
 
 .form-data {
   width: 100%;
