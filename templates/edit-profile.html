@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/fc1e235b2e.js"></script>
+  <link rel="stylesheet" href="{% static 'assets2/form_style.css' %}">
+  <title>Instadamn | Edit Profile</title>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div class="container">
+      <div class="form-data">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+          <div class="logo">
+              <h3 style="padding: 20px; font-size: 20px">Edit profile</h3>
+          </div>
+          {{form.image}}<br>
+          {{form.first_name}}<br>
+          {{form.last_name}}<br>
+          {{form.location}}<br>
+          {{form.bio}}<br>
+          <button class="form-btn" type="submit">Save edits</button>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
+
+{% endblock content %}

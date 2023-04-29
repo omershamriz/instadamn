@@ -1,0 +1,1 @@
+web gunicorn Instadamn.wsgi:application --log-file -
